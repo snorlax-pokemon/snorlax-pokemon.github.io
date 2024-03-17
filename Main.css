@@ -5,6 +5,7 @@ body {
 	margin: 0px;
 	width: 100%;
 	background-color:hsla(0,0%,22%,1.00);
+	flex: 1;
 }
 
 .compressed {
@@ -26,7 +27,7 @@ div.footer{
 	padding: 0px;
 	text-align: center;
 	position: fixed;
-	
+		
 }
 
 
@@ -62,7 +63,7 @@ li a:hover {
 	
 }
 
-div.Header img { 
+.Header img { 
 	text-align: right;
 	
 }
@@ -78,16 +79,17 @@ div.Header img {
 	vertical-align: middle;
 	height: 26px;
 }
-div.bodyText img { 
-	width: 225px;
-	height: 225px;
+.bodyText img { 
+	width: 300px;
+	height: 250px;
 	float: left;
 	margin-right: 10px;
+	margin-top: 12px;
 }
-div.bodyText p {
-	max-width: 600px;
+.bodyText p {
+	max-width: 640px;
 }
-div.TheRest {
+.TheRest {
 	background-color: #333;
 	height: 54px;
 }
@@ -99,5 +101,23 @@ div.TheRest {
 .logoImg {
 	display: table-cell; 
 	vertical-align: middle;
+}
+img.strats  {
+	width: "270";
+	height: "140";
+	border: 5px solid #222;
+    border-radius: 15px;
+	margin-left: 10px;
+	box-shadow: 0 4px 8px #aaaaaa;
+	
+}
+img.time {
+	width: "270";
+	height: "140";
+	border: 5px solid #222;
+    border-radius: 15px;
+	margin-left: 10px;
+	box-shadow: 0 4px 8px #aaaaaa;
+	
 }
 
