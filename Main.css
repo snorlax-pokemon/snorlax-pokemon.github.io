@@ -87,7 +87,8 @@ li a:hover {
 	margin-top: 12px;
 }
 .bodyText p {
-	max-width: 640px;
+	max-width: 600px;
+	margin: 10px;
 }
 .TheRest {
 	background-color: #333;
@@ -111,13 +112,22 @@ img.strats  {
 	box-shadow: 0 4px 8px #aaaaaa;
 	
 }
-img.time {
-	width: "270";
-	height: "140";
+img.King {
 	border: 5px solid #222;
     border-radius: 15px;
 	margin-left: 10px;
 	box-shadow: 0 4px 8px #aaaaaa;
+	object-fit: cover;
+	max-width: 30%;
+	margin-bottom: 5px;
 	
 }
+@media all and (min-width: 480px) {
+    .deskContent {display:block;}
+    .phoneContent {display:none;}
+}
 
+@media all and (max-width: 479px) {
+    .deskContent {display:none;}
+    .phoneContent {display:block;}
+}
