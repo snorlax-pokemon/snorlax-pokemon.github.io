@@ -87,9 +87,12 @@ li a:hover {
 	margin-top: 12px;
 }
 .bodyText p {
-	max-width: 600px;
+	max-width: 960px;
 	margin: 10px;
+	font-size: 16px;
+	vertical-align: middle;
 }
+
 .TheRest {
 	background-color: #333;
 	height: 54px;
@@ -104,23 +107,40 @@ li a:hover {
 	vertical-align: middle;
 }
 img.strats  {
-	width: "270";
-	height: "140";
+	width: 270px;
+	height: 140px;
 	border: 5px solid #222;
     border-radius: 15px;
 	margin-left: 10px;
 	box-shadow: 0 4px 8px #aaaaaa;
+	margin-bottom: 15px
 	
 }
 img.King {
 	border: 5px solid #222;
     border-radius: 15px;
 	margin-left: 10px;
+	margin-top: 30px;
 	box-shadow: 0 4px 8px #aaaaaa;
 	object-fit: cover;
 	max-width: 30%;
 	margin-bottom: 5px;
+
+}
+img.piece {
+	padding: 1px;
+	border: 5px solid hsla(0,0%,66%,1.00);
+    border-radius: 15px;
+	margin-left: 10px;
+	margin-top: 30px;
+	box-shadow: 0 4px 8px #aaaaaa;
+	max-width: 30%;
+	margin-bottom: 5px; 
 	
+
+}
+img.piece:hover {
+    cursor: pointer;
 }
 @media all and (min-width: 480px) {
     .deskContent {display:block;}
@@ -130,4 +150,70 @@ img.King {
 @media all and (max-width: 479px) {
     .deskContent {display:none;}
     .phoneContent {display:block;}
+}
+.popup-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	
+ }
+ .popup-menu a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: underline;
+    display: block;
+ }
+ .popup-menu a:hover {
+	 background-color: #f1f1f1
+}
+
+
+.timeline {
+	color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    max-width: 800px;
+    margin: 50px auto;
+    border-bottom: 2px solid #fff;
+}
+
+.event {
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+
+.event::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    bottom: -26px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.event:hover {
+    background-color: hsla(0,0%,39%,1.00);
+	cursor: pointer;
+}
+h1.MainH1 {
+	text-align: center;
+	color: #fff;
 }
