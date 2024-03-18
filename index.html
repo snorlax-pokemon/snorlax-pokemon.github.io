@@ -15,31 +15,71 @@
   <div class="compressed">
   <li class="menu menuleft"><a href="Home.html"><span class="logo"><strong>Chess Central</strong>&nbsp;</span><span class="logoImg"> <img src="Images/logo.png" width="26" height="26" alt="My logo"/></span></a></li> 
   <li class="menu menuleft deskContent"><a class="active" href="Rules.html">Rules</a></li>
-  <li class="menu menuleft deskContent"><a class="active" href="Puzzles.html">Puzzles</a></li>
+  <li class="menu menuleft deskContent"><a class="active" href="Puzzle.html">Puzzles</a></li>
   <li class="menu menuleft deskContent"><a class="active" href="MoreInfo.html">More info</a></li>
   </div>
   <div class="TheRest">
-	<li class="menu phoneContent"><a href="javascript:void(0);" class="icon active" onclick="myFunction()">
+	<li class="menu phoneContent"><a href="javascript:void(0);" class="icon active" onclick="show_menu()">
     <i class="fa fa-bars"></i>
   </a></li>
 </div>   
 	
 </div>
-	
+
+
 <div class="bodyText">
 	
-	<img class="King" src="Images/images.jpg" alt="King">
+	<img class="King" src="Images/King.jpg" alt="King">
+	<h1> A Brief History of Chess.</h1>
+		 <p> Chess originated in ancient India around the 6th century AD, where it was known as "Chaturanga". Initially, Chaturanga featured four military divisions represented by so called pieces to modern-day rooks, knights, bishops, and kings. The game spread across Persia, where it evolved into "Shatranj". Shatranj introduced new pieces like the queen and pawns, while the game's strategy and rules continued to develop. In the 10th century, chess reached Europe and the rules underwent further refinement, leading to the emergence of modern chess during the Renaissance. Significant changes included the powerful queen and pawn advancements, transforming the game into a dynamic contest of strategy and foresight. The 19th century saw the rise of some of the most legendary players and the advent of World Chess Championships. People like Wilhelm Steinitz and Since then, chess has become a global activity, with countless online chess games and tournaments being played every day.  With the development of computers, chess entered a new era, and today it remains a global sport with millions competing online and in tournaments worldwide.</p>
+</div>
+<div >
+	<h1 class="MainH1">Significant events in chess</h1>
+</div>
+<div class="timeline">
 	
-		 <p> Chess originated in ancient India around the 6th century AD and spread to Persia, where it was known as "Shatranj." It evolved over the centuries, gaining modern rules and strategy. In the 19th century, formalized rules led to the establishment of international competitions. Chess is complex game it involves a 8 by 8 grid boar,The 20th century saw the rise of legendary players and the advent of World Chess Championships. With the development of computers, chess entered a new era, and today it remains a global sport with millions competing online and in tournaments worldwide.Chess is a strategy game that involves no hidden information and no elements of chance. It is played on a chessboard with 64 squares arranged in an 8×8 grid. At the start, each player controls sixteen pieces: one king, one queen, two rooks, two bishops, two knights, and eight pawns. White moves first, followed by Black. The game is won by checkmating the opponent's king, i.e. threatening it with inescapable capture. There are also several ways a game can end in a draw.</p>
+    <div class="event">
+        <div class="date">6th century AD</div>
+        <div class="description">Origin of Chess</div>
+    </div>
+    <div class="event">
+        <div class="date">15th century</div>
+        <div class="description">Modern Rules</div>
+    </div>
+    <div class="event">
+        <div class="date"> 20th century</div>
+        <div class="description">Soviet Dominance</div>
+    </div>
+    <div class="event">
+        <div class="date"> 21st century</div>
+        <div class="description">Rise of Computers</div>
+    </div>
+    <div class="event">
+        <div class="date">2013-2022</div>
+        <div class="description">Magnus Carlsen's Reign</div>
+    </div>
 </div>
-<div class="bodyText">
-	<img class="strats" src="Images/Chess strats.jpg"  alt="A game of stratergy"/>
-  
-  <p>&nbsp;</p>
-		<p>More body&nbsp;</p>
-</div>
+								
+	
 <div class="footer">
 		 <p> Footer Text </p>
 </div>
+<div id="popup-menu" class="popup-menu">
+  <li class="menu menuleft"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft"><a class="active" href="Puzzles.html">Puzzles</a></li>
+  <li class="menu menuleft"><a class="active" href="MoreInfo.html">More info</a></li>
+</div>
+<script>
+function show_menu() {
+  var popupMenu = document.getElementById("popup-menu");
+  if ( popupMenu.style.display == "block" ) {
+    popupMenu.style.display = "none";
+  } else {
+    popupMenu.style.display = "block";
+  }
+  popupMenu.style.left = "" + (window.innerWidth - 170) + "px";
+  popupMenu.style.top = "58px";
+}
+</script>
 </body>
 </html>
