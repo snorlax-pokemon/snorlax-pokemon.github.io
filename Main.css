@@ -17,26 +17,29 @@ div.bodyText {
 	display:inline-block;
 	width: 100%;
 	padding: 0px;
+	
 }
 div.footer{
 	background-color:hsla(0,0%,20%,1.00);
 	color: hsla(0,0%,100%,1.00);
-	height: 90px;
+	height: 150px;
 	display: inline-block;
 	width: 100%;
 	padding: 0px;
 	text-align: center;
-	position: fixed;
-		
+			
 }
-
-
+div.contactme {
+	color: #fff;
+	text-align: center;
+}
 div.Header {
 	background-color: #333;
 	color: hsla(0,0%,27%,1.00);
 	font-size: 16px;
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
 }
 
 li.menu {
@@ -87,10 +90,16 @@ li a:hover {
 	margin-top: 12px;
 }
 .bodyText p {
-	max-width: 960px;
+	max-width: 1000px;
 	margin: 10px;
 	font-size: 16px;
 	vertical-align: middle;
+}
+.bodyText H1{
+	color: #fff;
+	text-align: left;
+	
+	
 }
 
 .TheRest {
@@ -127,7 +136,7 @@ img.King {
 	margin-bottom: 5px;
 
 }
-img.piece {
+img.Position {
 	padding: 1px;
 	border: 5px solid hsla(0,0%,66%,1.00);
     border-radius: 15px;
@@ -137,7 +146,16 @@ img.piece {
 	max-width: 30%;
 	margin-bottom: 5px; 
 	
-
+}
+img.Puzzle {
+	padding: 1px;
+	border: 5px solid hsla(0,0%,66%,1.00);
+    border-radius: 15px;
+	margin-left: 10px;
+	margin-top: 30px;
+	box-shadow: 0 4px 8px #aaaaaa;
+	max-width: 30%;
+	margin-bottom: 5px; 
 }
 img.piece:hover {
     cursor: pointer;
@@ -186,6 +204,7 @@ img.piece:hover {
     position: relative;
     text-align: center;
     flex: 1;
+	color: #fff
 }
 
 .event::after {
@@ -217,3 +236,128 @@ h1.MainH1 {
 	text-align: center;
 	color: #fff;
 }
+h2 {
+	color: #FFFFFF;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center
+}
+h1 {
+	text-align: center;
+}
+.Paragraph {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto; 
+  text-align: center;
+}
+.Paragraph p{
+	text-align: center;
+	color: #fff;	
+}
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: none;
+}
+
+th {
+    font-weight: bold;
+}
+a.AnswersLink {
+	color: #fff;
+	
+}
+.Bodycenter {
+	text-align: center;
+}
+.Bodycenter h1{
+	text-align: center;
+}
+.table1 {
+	align-content: center;
+	width: 100%;
+}
+.rulesTable {
+	margin: 0 auto;
+}
+
+.Moves {
+	padding: 1px;
+	border: 5px solid hsla(0,0%,66%,1.00);
+    border-radius: 15px;
+	margin-left: 10px;
+	margin-top: 30px;
+	box-shadow: 0 4px 8px #aaaaaa;
+	margin-bottom: 5px; 
+}
+h3 {
+	font-size: 15px;
+}
+.description {
+	color: #fff;
+}
+.date {
+	color: #fff;
+}
+.href1 {
+	color: #fff;
+}
+
+.introduction {
+    text-align: center;
+}
+
+
+
+.square {
+	width: 600px;
+    height: 290px;
+    background: linear-gradient(to bottom right, darkgray, black); /* Gradient from red to blue */
+    border-radius: 10px;
+    margin: 25px 30px 15px auto; /* Add top margin to push the square down */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.square h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.square p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.gif1 {
+	padding: 30px;
+} 
+.moreinfo {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text inside the div */
+	color: #fff;
+	
+}
+.gif2 {
+	padding: 1px;
+	border: 5px solid hsla(0,0%,66%,1.00);
+    border-radius: 15px;
+	box-shadow: 0 4px 8px #aaaaaa;
+	margin-bottom: 5px; 
+}
+.gif1 {
+	padding-right: 60px;
+}
+
+
