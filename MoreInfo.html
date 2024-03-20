@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>MyActualWebsite </title>
+</head>
+
+<body>
+
+	
+<div class="Header">
+  <div class="compressed">
+  <li class="menu menuleft"><a href="Home.html"><span class="logo"><strong>Chess Central</strong>&nbsp;</span><span class="logoImg"> <img src="Images/logo.png" width="26" height="26" alt="My logo"/></span></a></li> 
+  <li class="menu menuleft deskContent"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft deskContent"><a class="active" href="Puzzle.html">Puzzles</a></li>
+  </div>
+  <div class="TheRest">
+	<li class="menu phoneContent"><a href="javascript:void(0);" class="icon active" onclick="show_menu()">
+    <i class="fa fa-bars"></i>
+  </a></li>
+</div>   
+	
+</div>
+	
+	<div class="moreinfo">
+	<h1> More Info.</h1>
+		 <p> My name is Sam Gates, and I'm deeply passionate about the game of chess. With a rating of 1800 on chess.com and a junior chess league rating of 800, I've spent countless hours honing my skills both online and in person. Over the years, I've had the privilege of participating in over 100 chess tournaments, each one adding to my love for the game and sharpening my strategic thinking.</p>
+
+		<p>For those eager to embark on their own chess journey, I wholeheartedly recommend joining the Junior Chess Academy tournaments tailored for ages 6-18. These tournaments provide invaluable experience and guidance, nurturing young minds into formidable players.</p>
+
+		<p>However, if you're serious about improving your chess game, there's no better way than to embrace the online community and become a member of chess.com. With its vast array of resources, tutorials, and the opportunity to challenge players from around the world, chess.com offers an unparalleled platform for growth and development.</p>
+
+		<p>Whether you're a seasoned player seeking new challenges or just beginning your chess adventure, remember that every move on the board is an opportunity to learn and grow. So, dive in, explore, and let the timeless game of chess become your lifelong companion on the journey of strategic mastery.</p>
+	</div>
+
+<div class="footer">
+		 	<h3>Contact Me</h3>
+            <p>adress: 91 Pacific Hwy, Hornsby NSW 2077</p>
+            <p>Phone: 61+ 232 565 263</p>
+            <p>Email: GatesS27@barker.college</p>
+</div>
+<div id="popup-menu" class="popup-menu">
+  <li class="menu menuleft"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft"><a class="active" href="Puzzles.html">Puzzles</a></li>
+  <li class="menu menuleft"><a class="active" href="MoreInfo.html">More info</a></li>
+</div>
+<script>
+function show_menu() {
+  var popupMenu = document.getElementById("popup-menu");
+  if ( popupMenu.style.display == "block" ) {
+    popupMenu.style.display = "none";
+  } else {
+    popupMenu.style.display = "block";
+  }
+  popupMenu.style.left = "" + (window.innerWidth - 170) + "px";
+  popupMenu.style.top = "58px";
+}
+</script>
+</body>
+</html>

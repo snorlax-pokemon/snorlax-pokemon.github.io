@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>MyActualWebsite </title>
+</head>
+
+<body>
+
+	
+<div class="Header">
+  <div class="compressed">
+  <li class="menu menuleft"><a href="Home.html"><span class="logo"><strong>Chess Central</strong>&nbsp;</span><span class="logoImg"> <img src="Images/logo.png" width="26" height="26" alt="My logo"/></span></a></li> 
+  <li class="menu menuleft deskContent"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft deskContent"><a class="active" href="MoreInfo.html">More info</a></li>
+  </div>
+  <div class="TheRest">
+	<li class="menu phoneContent"><a href="javascript:void(0);" class="icon active" onclick="show_menu()">
+    <i class="fa fa-bars"></i>
+  </a></li>
+</div>   
+	
+</div>
+	
+<div class="bodyText" style="width: 100%">
+	<div class="Bodycenter">
+		<h1> Try Some of these puzzles</h1>
+	</div>
+		<h2> They are all whites moves</h2>
+<div class="Bodycenter"><a class="AnswersLink" id="answerlink" href="javascript:void(0);" onclick="show_answers()">Show Answers &gt;</a></div>
+
+<div id="answers" class="bodyText" style="display: none;"> <br/> These answers are ordered from the left being one and the on next to the far left being 2, etc. <br/> 1. F2xF8# <br/> 2. A5+, Kb5, Qc4# <br/> 3.</div>
+
+		<img class="Puzzle" width="470" height="470" src="Images/Puzzle650.png" alt="King">	
+		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1000.png" alt="King">
+		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1350.png" alt="King">
+		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1600.png" alt="King">
+		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1850.png" alt="King">
+		<img class="Puzzle" width="470" height="470" src="Images/Puzzle2000.png" alt="King">
+</div>
+	
+<div class="footer">
+		    <h3>Contact Me</h3>
+            <p>adress: 91 Pacific Hwy, Hornsby NSW 2077</p>
+            <p>Phone: 61+ 232 565 263</p>
+            <p>Email: GatesS27@barker.college</p>
+		
+</div>
+<div id="popup-menu" class="popup-menu">
+  <li class="menu menuleft"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft"><a class="active" href="Puzzles.html">Puzzles</a></li>
+  <li class="menu menuleft"><a class="active" href="MoreInfo.html">More info</a></li>
+</div>
+<script>
+function show_menu() {
+  var popupMenu = document.getElementById("popup-menu");
+  if ( popupMenu.style.display == "block" ) {
+    popupMenu.style.display = "none";
+  } else {
+    popupMenu.style.display = "block";
+  }
+  popupMenu.style.left = "" + (window.innerWidth - 170) + "px";
+  popupMenu.style.top = "58px";
+}
+function show_answers() {
+  var answerlink = document.getElementById("answerlink");
+  var answers = document.getElementById("answers");
+  if ( answers.style.display == "block" ) {
+    answers.style.display = "none";
+	answerlink.innerHTML = "Hide Answers"
+  } else {
+    answers.style.display = "block";
+	answerlink.innerHTML = "Show Answers"
+  }
+}
+
+
+
+</script>
+</body>
+</html>
