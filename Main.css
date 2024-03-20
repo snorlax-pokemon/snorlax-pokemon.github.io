@@ -19,20 +19,34 @@ div.bodyText {
 	padding: 0px;
 	
 }
-div.footer{
-	background-color:hsla(0,0%,20%,1.00);
-	color: hsla(0,0%,100%,1.00);
-	height: 150px;
-	display: inline-block;
-	width: 100%;
-	padding: 0px;
-	text-align: center;
-			
+div.footer {
+  background-color: hsla(0, 0%, 20%, 1.00);
+  color: hsla(0, 0%, 100%, 1.00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
 }
+div.footer img:hover {
+	cursor: pointer;
+}
+div.left-section {
+  margin-right: 20px;
+}
+
 div.contactme {
-	color: #fff;
-	text-align: center;
+  text-align: center;
 }
+
+div.contactme h3 {
+  color: #fff;
+}
+
+div.contactme p {
+  color: #fff;
+}
+
 div.Header {
 	background-color: #333;
 	color: hsla(0,0%,27%,1.00);
@@ -133,8 +147,17 @@ img.King {
 	box-shadow: 0 4px 8px #aaaaaa;
 	object-fit: cover;
 	max-width: 30%;
+	max-height: 30%;
 	margin-bottom: 5px;
 
+}
+td.left {
+	min-width: 160px;
+	width: 180px;
+	max-width: 190px;
+}
+td.right {
+	width: 250px;
 }
 img.Position {
 	padding: 1px;
@@ -143,7 +166,7 @@ img.Position {
 	margin-left: 10px;
 	margin-top: 30px;
 	box-shadow: 0 4px 8px #aaaaaa;
-	max-width: 30%;
+	max-width: 300px;
 	margin-bottom: 5px; 
 	
 }
@@ -154,8 +177,8 @@ img.Puzzle {
 	margin-left: 10px;
 	margin-top: 30px;
 	box-shadow: 0 4px 8px #aaaaaa;
-	max-width: 30%;
-	margin-bottom: 5px; 
+	max-width: 100%; 
+    height: auto; 
 }
 img.piece:hover {
     cursor: pointer;
@@ -280,9 +303,6 @@ a.AnswersLink {
 	align-content: center;
 	width: 100%;
 }
-.rulesTable {
-	margin: 0 auto;
-}
 
 .Moves {
 	padding: 1px;
@@ -313,11 +333,11 @@ h3 {
 
 
 .square {
-	width: 600px;
+	width: 550px;
     height: 290px;
     background: linear-gradient(to bottom right, darkgray, black); /* Gradient from red to blue */
     border-radius: 10px;
-    margin: 25px 30px 15px auto; /* Add top margin to push the square down */
+    margin: 25px 30px 15px auto; 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -340,12 +360,12 @@ h3 {
 }
 
 .gif1 {
-	padding: 30px;
+	padding: 70px;
 } 
 .moreinfo {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center text inside the div */
+    width: 80%; 
+    margin: 0 auto; 
+    text-align: center; 
 	color: #fff;
 	
 }
@@ -355,9 +375,46 @@ h3 {
     border-radius: 15px;
 	box-shadow: 0 4px 8px #aaaaaa;
 	margin-bottom: 5px; 
+	margin-left: 60px;
 }
 .gif1 {
 	padding-right: 60px;
 }
 
 
+
+
+
+@media screen and (max-width: 768px) {
+  .rulesTable td {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .bodyText img.Moves {
+    margin-top: 5px; 
+    margin-bottom: 5px; 
+    margin-right: 0;
+  }
+
+}
+.Position {
+  width: 100%;
+  height: auto;
+}
+
+@media all and (min-width: 480px) {
+  .rulesTable {
+    width: 900px;
+  }
+}
+.rulesTable {
+  margin: 0 auto;
+}
+
+.rulesTable td {
+  padding: 1px;
+}
+.rulesTable td h2 {
+	text-align: left;
+}

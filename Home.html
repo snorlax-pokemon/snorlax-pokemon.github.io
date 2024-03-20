@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>MyActualWebsite </title>
+</head>
+
+<body>
+
+	
+<div class="Header">
+  <div class="compressed">
+  <li class="menu menuleft"><a href="Home.html"><span class="logo"><strong>Chess Central</strong>&nbsp;</span><span class="logoImg"> <img src="Images/logo.png" width="26" height="26" alt="My logo"/></span></a></li> 
+  <li class="menu menuleft deskContent"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft deskContent"><a class="active" href="Puzzle.html">Puzzles</a></li>
+  <li class="menu menuleft deskContent"><a class="active" href="MoreInfo.html">More info</a></li>
+  </div>
+  <div class="TheRest">
+	<li class="menu phoneContent"><a href="javascript:void(0);" class="icon active" onclick="show_menu()">
+    <i class="fa fa-bars"></i>
+  </a></li>
+</div>   
+	
+</div>
+	
+<div class="deskContent">
+<table style="border: 0px black solid;">
+<tr>
+	<td><img class="gif1" src="Images/Gif1.gif" width="200" height="120" alt=""/></td>
+<td>
+<div class="introduction">
+	 <div class="square">
+			 
+        <h1>Introduction:</h1>
+		 <p>Welcome to the fascinating world of chess!</p> <p> Learn the basic rules and strategies to become a master.  Delve into the intricacies of this timeless game, mastering its rules and strategies to ascend to the ranks of chess. </p><p>In this website you will be able to learn about the history of chess, the rules of chess and practice your chess skills using beginner to advanced puzzles. I hope you enjoy my website.</p>
+  </div>
+</div>
+</td>
+	<td><img class="gif2" src="Images/Gif2.gif" width="200" height="120" alt=""></td>
+	
+</tr>
+
+  </table>
+</div>
+
+
+	<div class="bodyText">
+	
+	<img class="King" src="Images/King.jpg" alt="King">
+	<div class="history">
+	<h1> Brief History of Chess:</h1>
+		 <p> Chess originated in ancient India around the 6th century AD, where it was known as "Chaturanga". Initially, Chaturanga featured four military divisions represented by so called pieces to modern-day rooks, knights, bishops, and kings. The game spread across Persia, where it evolved into "Shatranj". Shatranj introduced new pieces like the queen and pawns, while the game's strategy and rules continued to develop. In the 10th century, chess reached Europe and the rules underwent further refinement, leading to the emergence of modern chess during the Renaissance. Significant changes included the powerful queen and pawn advancements, transforming the game into a dynamic contest of strategy and foresight. The 19th century saw the rise of some of the most legendary players and the advent of World Chess Championships. People like Wilhelm Steinitz and Since then, chess has become a global activity, with countless online chess games and tournaments being played every day.  With the development of computers, chess entered a new era, and today it remains a global sport with millions competing online and in tournaments worldwide.</p>
+	</div>
+</div>
+<div >
+	<h1 class="MainH1">Significant Events in Chess:</h1>
+</div>
+<div class="timeline">
+	
+    <div class="event">
+        <div class="date"><a class="href1" href="https://en.wikipedia.org/wiki/History_of_chess">6th century AD</a></div>
+        <div class="description"><a class="href1" href="https://en.wikipedia.org/wiki/History_of_chess">Origin of Chess</a></div>
+  </div>
+    
+    <div class="event">
+        <div class="date"><a class="href1" href="https://en.wikipedia.org/wiki/History_of_chess">15th century AD</a></div>
+       <div class="description"><a class="href1" href="https://en.wikipedia.org/wiki/Rules_of_chess">Modern Rules</a></div>
+  </div>
+   
+	<div class="event">
+		<div class="date"><a class="href1" href="https://en.wikipedia.org/wiki/History_of_chess">20th century</a></div>
+		<div class="description"><a class="href1" href="https://en.wikipedia.org/wiki/History_of_chess">Soviet Dominance</a></div>
+    </div>
+    <div class="event">
+		<div class="date"><a class="href1" href="https://en.wikipedia.org/wiki/Computer_chess">21st century</a></div>
+		<div class="description"><a class="href1" href="https://en.wikipedia.org/wiki/Computer_chess">Rise of Computers</a></div>
+    </div>
+	 <div class="event">
+		<div class="date"><a class="href1" href="https://simple.wikipedia.org/wiki/Magnus_Carlsen#:~:text=Carlsen%20became%20World%20Chess%20Champion,repeated%20in%202019%20and%202022.">2013-2022</a></div>
+		<div class="description"><a class="href1" href="https://simple.wikipedia.org/wiki/Magnus_Carlsen#:~:text=Carlsen%20became%20World%20Chess%20Champion,repeated%20in%202019%20and%202022.">Magnus Carlsen's Reign</a></div>
+	</div>
+</div>
+<br/>
+<br/>
+
+<div class="footer">
+<a href="https://www.barker.college/"><img src="Images/Barker.png"height="120" width="120" alt=""/></a>
+<div class="contactme">
+	<h3>Contact Me:</h3>
+            <p>address: 91 Pacific Hwy, Hornsby NSW 2077</p>
+            <p>Phone: 61+ 232 565 263</p>
+            <p>Email: GatesS27@barker.college</p> 
+  </div>
+</div>
+<div id="popup-menu" class="popup-menu">
+  <li class="menu menuleft"><a class="active" href="Rules.html">Rules</a></li>
+  <li class="menu menuleft"><a class="active" href="Puzzle.html">Puzzles</a></li>
+  <li class="menu menuleft"><a class="active" href="MoreInfo.html">More info</a></li>
+</div>
+<script>
+function show_menu() {
+  var popupMenu = document.getElementById("popup-menu");
+  if ( popupMenu.style.display == "block" ) {
+    popupMenu.style.display = "none";
+  } else {
+    popupMenu.style.display = "block";
+  }
+  popupMenu.style.left = "" + (window.innerWidth - 170) + "px";
+  popupMenu.style.top = "58px";
+}
+</script>
+</body>
+</html>

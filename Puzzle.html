@@ -27,31 +27,47 @@
 	
 <div class="bodyText" style="width: 100%">
 	<div class="Bodycenter">
-		<h1> Try Some of these puzzles</h1>
+		<h1> Try Some of these puzzles:</h1>
 	</div>
-		<h2> They are all whites moves</h2>
+		<h2> They are all whites moves.</h2>
 <div class="Bodycenter"><a class="AnswersLink" id="answerlink" href="javascript:void(0);" onclick="show_answers()">Show Answers &gt;</a></div>
 
-<div id="answers" class="bodyText" style="display: none;"> <br/> These answers are ordered from the left being one and the on next to the far left being 2, etc. <br/> 1. F2xF8# <br/> 2. A5+, Kb5, Qc4# <br/> 3.</div>
-
+<div id="answers" class="bodyText" style="display: none;"> <br/> These answers are ordered from the left being one and the one next to the far left being 2, etc. <br/> 1. F2xF8# <br/> 2. A5+, Kb5, Qc4# <br/> 3. Knxf6+, Qxf6, Qf8# <br/> 4. Qg2+, Rxg2, Kng3+, Kg1, Knh3# </br> 5. A8=Kn, d2, Knb6, c7xb6, c7, b5, c8=Kn, b4, Knd6, e7xd6, e7, d5, e8=Kn, d4, Knf6, g7xf6, g7, f5, g8=Kn# <br/> 6. Ra6, b7xa7, b7#</div>
+<table>
+	<tr> 
 		<img class="Puzzle" width="470" height="470" src="Images/Puzzle650.png" alt="King">	
+	</tr>
+	<tr>
 		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1000.png" alt="King">
+	</tr>
+	<tr>
 		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1350.png" alt="King">
+	</tr>
+	<tr>
 		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1600.png" alt="King">
+	</tr>
+	<tr>
 		<img class="Puzzle" width="470" height="470" src="Images/Puzzle1850.png" alt="King">
+	</tr>
+	<tr>
 		<img class="Puzzle" width="470" height="470" src="Images/Puzzle2000.png" alt="King">
+	</tr>
+	
+</table>
 </div>
 	
+	
 <div class="footer">
-		    <h3>Contact Me</h3>
-            <p>adress: 91 Pacific Hwy, Hornsby NSW 2077</p>
+<a href="https://www.barker.college/"><img src="Images/Barker.png"height="120" width="120" alt=""/></a>
+<div class="contactme">
+	<h3>Contact Me</h3>
+            <p>address: 91 Pacific Hwy, Hornsby NSW 2077</p>
             <p>Phone: 61+ 232 565 263</p>
-            <p>Email: GatesS27@barker.college</p>
-		
+            <p>Email: GatesS27@barker.college</p> 
+  </div>
 </div>
 <div id="popup-menu" class="popup-menu">
   <li class="menu menuleft"><a class="active" href="Rules.html">Rules</a></li>
-  <li class="menu menuleft"><a class="active" href="Puzzles.html">Puzzles</a></li>
   <li class="menu menuleft"><a class="active" href="MoreInfo.html">More info</a></li>
 </div>
 <script>
@@ -70,10 +86,10 @@ function show_answers() {
   var answers = document.getElementById("answers");
   if ( answers.style.display == "block" ) {
     answers.style.display = "none";
-	answerlink.innerHTML = "Hide Answers"
+	answerlink.innerHTML = "Show Answers >"
   } else {
     answers.style.display = "block";
-	answerlink.innerHTML = "Show Answers"
+	answerlink.innerHTML = "Hide Answers"
   }
 }
 
